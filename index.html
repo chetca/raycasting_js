@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+
+ <head>
+		<meta charset="UTF-8" />
+		<title>Рейкастовый движок</title>
+		<link rel="stylesheet" type="text/css" href="style.css">		
+	</head>
+
+ <body>
+	<table cellspacing="0" id="maket" border="2">
+	   <tr> 
+		    <td id="leftcol">
+		    	<script type="text/javascript">
+		    		var canvas = document.createElement('canvas');
+					canvas.id = 'canvas';
+					document.body.appendChild(canvas);
+					canvas.width = 1024;
+					canvas.height = 576;
+					var ctx = canvas.getContext('2d');
+				</script>
+				<div style="display:none;">
+				<img id="wall" src="images/wall_light.png">
+				</div>
+				<script type="text/javascript" src="rayc.js"></script>
+		   	</td>
+		    <td id="rightcol">
+		    	<div>
+		    		Движение: <hr/>
+					WASD, стрелки - движение <hr/>
+					Shift - движение <hr/>
+					M - скрыть/показать карту
+				</div>
+		    </td>
+	   </tr>
+	</table>	
+ </body>
+</html>
