@@ -8,30 +8,34 @@
 	</head>
 
  <body>
+	<script type="text/javascript">
+		   		var canvas = document.createElement('canvas');
+				canvas.id = 'canvas';
+				document.body.appendChild(canvas);
+				canvas.width = 1024;
+				canvas.height = 576;
+				var ctx = canvas.getContext('2d');
+			</script>
+			<div style="display:none;">
+			<img id="wall" src="images/wall.jpg">
+			<img id="door" src="images/door.jpg">
+			<img id="window" src="images/window.jpg">
+			<img id="stand1" src="images/stand1.jpg">
+			<img id="stand2" src="images/stand2.jpg">
+			<img id="stand3" src="images/stand3.jpg">
+			<img id="stand4" src="images/stand4.jpg">
+			<img id="GStand1" src="images/GStand1.jpg">
+			<img id="GStand2" src="images/GStand2.jpg">
+			</div>
+			<script type="text/javascript" src="rayc.js"></script>
 	<table cellspacing="0" id="maket" border="2">
-	   <tr> 
-		    <td id="leftcol">
-		    	<script type="text/javascript">
-		    		var canvas = document.createElement('canvas');
-					canvas.id = 'canvas';
-					document.body.appendChild(canvas);
-					canvas.width = 1024;
-					canvas.height = 576;
-					var ctx = canvas.getContext('2d');
-				</script>
-				<div style="display:none;">
-				<img id="wall" src="images/wall_light.png">
-				</div>
-				<script type="text/javascript" src="rayc.js"></script>
-		   	</td>
-		    <td id="rightcol">
-		    	<div>
-		    		Движение: <hr/>
-					WASD, стрелки - движение <hr/>
-					Shift - движение <hr/>
-					M - скрыть/показать карту
-				</div>
-		    </td>
+	   <tr>		   	
+		   	<div>
+		   		Движение: <hr/>
+				WASD, стрелки - движение <hr/>
+				Shift - движение <hr/>
+				M - скрыть/показать карту
+			</div>
 	   </tr>
 	</table>	
  </body>
